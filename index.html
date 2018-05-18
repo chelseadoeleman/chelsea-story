@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <link rel="canonical" href="index.amp.html">
-    <link rel="manifest" href="manifest.json">
+    <link rel="canonical" href="index.html">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-0.1.js"></script>
     <!-- To use amp-carousel -->
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
@@ -13,132 +19,215 @@
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
     <!-- Standard script which you need to build amp stories -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
     <!-- CSS needs to be implemented in the head element -->
     <style amp-custom>
         /* CSS styling */
-            body {
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                width: auto;
-                margin: 0;
-                padding: 0;
-                font-size: 1.1em;
-            }
 
-            /* Set default background-color */
-            #cover, #hobby, #page1, #page2, #page3, #page5, #page6 {
-                background-color: rgb(252, 144, 117);
-            }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            font-size: 1.1em;
+        }
 
-            /* Default setting h1 element */
-            h1 {
-                font-family: 'Century gothic';
-                color: white;
-                font-size: 1.5em;
-                margin: 0.5em;
-                text-shadow: black;
-            }
+        /* Set default background-color */
 
-            /* Default setting p element */
-            p {
-                margin: 0.5em;
-                color: white;
-                padding: 0.5em;
-                line-height: 1.2em;
-            }
+        #cover,
+        #hobby,
+        #page1,
+        #page2,
+        #page3,
+        #page5,
+        #page6 {
+            background-color: rgb(252, 144, 117);
+        }
 
-            /* Set elements to the bottom of the page */
-            .bottom {
-                padding-top: 26em;
-            }
+        /* Default setting h1 element */
 
-            /* Specific styling to elements of a page  */
-            #cover p {
-                padding: 0;
-                padding-bottom: -2em;
-                line-height: 1.5em;
-            }
+        h1 {
+            font-family: 'Century gothic';
+            color: white;
+            font-size: 1.5em;
+            margin: 0.5em;
+            text-shadow: black;
+        }
 
-            #hobby h1 {
-                color: rgb(252, 144, 117);
-                text-align: right;
-            }
+        /* Default setting p element */
 
-            #page2 h1, #page3 h1, #page4 h1, #page6 h1 {
-                text-align: right;
-                font-size: 2.1em;
-            }
-            
-            .title h1 {
-                color: rgb(252, 144, 117);
-                padding-left: 1.2em;
-            }
+        p {
+            margin: 0.5em;
+            color: white;
+            padding: 0.5em;
+            line-height: 1.2em;
+        }
 
-            .title {
-                padding-top: 2em;
-                text-align: right;
-            }
+        /* Set elements to the bottom of the page */
 
-            #page4, #page5 {
-                background-color: white;
-            }
+        .bottom {
+            padding-top: 26em;
+        }
 
-            #page4 h1, #page5 h1 {
-                color: rgb(252, 144, 117);
-            }
+        /* Specific styling to elements of a page  */
 
-            #page5 .title p {
-                color: rgb(252, 144, 117);
-            }
+        #cover p {
+            padding: 0;
+            padding-bottom: -2em;
+            line-height: 1.5em;
+        }
 
-            /* Centered images, not working with margin because of standard amp templates */
-            #page5 amp-story-grid-layer {
-                display: flex;
-            }
+        #hobby h1 {
+            color: rgb(252, 144, 117);
+            text-align: right;
+        }
 
-            #page5 .cats {
-                border-radius: 0.75rem;
-            }
+        #page2 h1,
+        #page3 h1,
+        #page4 h1,
+        #page6 h1 {
+            text-align: right;
+            font-size: 2.1em;
+        }
 
-            /* Every image element is wrapped in a div class="wrapper" */
-            .wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            } 
+        .title h1 {
+            color: rgb(252, 144, 117);
+            padding-left: 1.2em;
+        }
 
-            /* Div as a parent element of a amp-img with a standard image ratio, so the images aren't awkwardly scaled */
-            .image-ratio {
-                position: relative;
-                width: 8.5em;
-                height: 8.5em;
-            }
+        .title {
+            padding-top: 2em;
+            text-align: right;
+        }
 
-            /* Covers the whole div element .image-ratio */
-            amp-img.cats img {
-                object-fit: cover;
-            }
+        #page4,
+        #page5 {
+            background-color: white;
+        }
 
-            #page6 a {
-                text-align: center;
-                text-decoration: none;
-                color:  rgb(252, 144, 117);
-                display: block; 
-                background-color: white;
-                border-radius: 0.75rem;
-                padding: 0.5em;
-                font-size: 1.2em;
-            }
+        #page4 h1,
+        #page5 h1 {
+            color: rgb(252, 144, 117);
+        }
 
-            /* When you click on the link */
-            #page6 a:hover {
-                color:  white;
-                background-color: rgb(252, 144, 117);
-                padding: 0.2em;
-                font-size: 1.5em;
-            }
+        #page5 .title p {
+            color: rgb(252, 144, 117);
+        }
 
-        </style>
+        /* Centered images, not working with margin because of standard amp templates */
+
+        #page5 amp-story-grid-layer {
+            display: flex;
+        }
+
+        #page5 .cats {
+            border-radius: 0.75rem;
+        }
+
+        /* Every image element is wrapped in a div class="wrapper" */
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Div as a parent element of a amp-img with a standard image ratio, so the images aren't awkwardly scaled */
+
+        .image-ratio {
+            position: relative;
+            width: 8.5em;
+            height: 8.5em;
+        }
+
+        /* Covers the whole div element .image-ratio */
+
+        amp-img.cats img {
+            object-fit: cover;
+        }
+
+        #page6 a {
+            text-align: center;
+            text-decoration: none;
+            color: rgb(252, 144, 117);
+            display: block;
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 0.5em;
+            font-size: 1.2em;
+        }
+
+        /* When you click on the link */
+
+        #page6 a:hover {
+            color: white;
+            background-color: rgb(252, 144, 117);
+            padding: 0.2em;
+            font-size: 1.5em;
+        }
+    </style>
     <title>AMP story Chelsea</title>
 </head>
 
@@ -152,12 +241,9 @@
             <!-- Background image new layer. Note: special img tag for amp -->
             <amp-story-grid-layer template="fill">
                 <!-- Animate background image  -->
-                <div animate-in="zoom-in"
-                    animate-in-duration="50s">
+                <div animate-in="zoom-in" animate-in-duration="50s">
                     <!-- Bron: Unsplash @trapnation https://unsplash.com/photos/he703qyvnzY -->
-                    <amp-img src="../assets/cover1.jpg"
-                        width="720" height="1280" 
-                        layout="responsive">
+                    <amp-img src="../assets/cover1.jpg" width="720" height="1280" layout="responsive">
                     </amp-img>
                 </div>
             </amp-story-grid-layer>
@@ -166,17 +252,13 @@
                 <!-- Wrap elements in a div to "text-align: right;" content, because margin doesn't work properly in amp-templates -->
                 <div class="title">
                     <!-- Add animations to elements -->
-                    <h1 animate-in="fly-in-right"
-                        animate-in-delay="1s">
+                    <h1 animate-in="fly-in-right" animate-in-delay="1s">
                         Hi! Ik ben Chelsea
-                    </h1> 
-                    <p  animate-in="fly-in-right"
-                        animate-in-delay="2s">
-                        2e jaars student
-                        Communication and Multimedia design (CMD)
-                        aan de Hogeschool van Amsterdam
+                    </h1>
+                    <p animate-in="fly-in-right" animate-in-delay="2s">
+                        2e jaars student Communication and Multimedia design (CMD) aan de Hogeschool van Amsterdam
                     </p>
-               </div>
+                </div>
             </amp-story-grid-layer>
         </amp-story-page>
 
@@ -184,16 +266,11 @@
         <amp-story-page id="page1" auto-advance-after="12s">
             <amp-story-grid-layer template="fill">
                 <!-- Animate background image -->
-                <div animate-in="zoom-in"
-                    animate-in-duration="50s">
+                <div animate-in="zoom-in" animate-in-duration="50s">
                     <!-- Bron: Unsplash @reddangelo https://unsplash.com/photos/318Wz30D2zU -->
                     <!-- Animate image in background, image duration is set to 30s because of zoom and pan speed. Story page itself is set 
                     to 5s -->
-                    <amp-img src="../assets/cover6.jpg"
-                        animate-in="pan-right"
-                        animate-in-duration="30s"
-                        width="720" height="1280" 
-                        layout="fixed">
+                    <amp-img src="../assets/cover6.jpg" animate-in="pan-right" animate-in-duration="30s" width="720" height="1280" layout="fixed">
                     </amp-img>
                 </div>
             </amp-story-grid-layer>
@@ -201,12 +278,10 @@
             <amp-story-grid-layer template="vertical">
                 <!-- Wrap elements in a div to "text-align: right;" content, because margin doesn't work properly in amp-templates -->
                 <div class="title">
-                    <h1 animate-in="fly-in-right"
-                        animate-in-delay="0.5s">
+                    <h1 animate-in="fly-in-right" animate-in-delay="0.5s">
                         Over mij!
                     </h1>
-                    <p animate-in="fly-in-right"
-                        animate-in-delay="1s">
+                    <p animate-in="fly-in-right" animate-in-delay="1s">
                         Ik ben 20 jaar en kom uit Nieuw-Vennep. Voor mijn opleiding deed ik Havo Natuur en techniek.
                     </p>
                 </div>
@@ -217,21 +292,17 @@
         <amp-story-page id="hobby" auto-advance-after="10s">
             <amp-story-grid-layer template="fill">
                 <!-- Animate background image -->
-                <div animate-in="zoom-in"
-                    animate-in-duration="50s">
+                <div animate-in="zoom-in" animate-in-duration="50s">
                     <!-- Bron: Unsplash @yannispap https://unsplash.com/photos/x3RZYIhHLV0 -->
-                    <amp-img src="../assets/cover7.jpg"
-                        width="720" height="1280" 
-                        layout="responsive">
+                    <amp-img src="../assets/cover7.jpg" width="720" height="1280" layout="responsive">
                     </amp-img>
                 </div>
             </amp-story-grid-layer>
             <!-- New layer so text will be displayed as an overlay -->
             <amp-story-grid-layer template="vertical">
-                    <h1 animate-in="fly-in-right"
-                        animate-in-delay="0.5s">
-                        Een aantal dingen, die ik leuk vind
-                    </h1>
+                <h1 animate-in="fly-in-right" animate-in-delay="0.5s">
+                    Een aantal dingen, die ik leuk vind
+                </h1>
             </amp-story-grid-layer>
         </amp-story-page>
 
@@ -241,49 +312,35 @@
                 <!-- Set width, height, etc. Specify poster as default image. Autoplay mutes audio automatically unless the user decides
                 to click on the video -->
                 <!-- Bron: Youtube -->
-                <amp-video poster="assets/tennis.jpg"
-                        src="../assets/tennis1.mp4"
-                        autoplay
-                        loop
-                        width="720" height="1280"
-                        layout="fixed">
+                <amp-video poster="assets/tennis.jpg" src="../assets/tennis1.mp4" autoplay loop width="720" height="1280" layout="fixed">
                     <!-- Define type -->
-                    <source type="video/mp4"
-                        src="../assets/tennis1.mp4">
+                    <source type="video/mp4" src="../assets/tennis1.mp4">
                 </amp-video>
             </amp-story-grid-layer>
             <!-- Add another layer, so the title will be an overlay over the video-->
             <amp-story-grid-layer template="vertical">
-                    <h1 animate-in="fly-in-right"
-                        animate-in-delay="0.5s">
-                        Tennis
-                    </h1>
+                <h1 animate-in="fly-in-right" animate-in-delay="0.5s">
+                    Tennis
+                </h1>
             </amp-story-grid-layer>
         </amp-story-page>
 
         <!-- Show gif of an skiing person. Format is mp4 -->
         <amp-story-page id="page3" auto-advance-after="10s">
             <amp-story-grid-layer template="fill">
-                    <!-- Set width, heigth, etc. Specify poster as default image . Autoplay mutes audio automatically unless the user decides
+                <!-- Set width, heigth, etc. Specify poster as default image . Autoplay mutes audio automatically unless the user decides
                     to click on the video -->
-                    <!-- Bron: Coverr Mt. Baker https://coverr.co/ -->
-                    <amp-video poster="assets/Mt_Baker.jpg"
-                            src="../assets/Mt_Baker.mp4"
-                            autoplay
-                            loop
-                            width="720" height="1280"
-                            layout="responsive">
-                        <!-- Define type -->
-                        <source type="video/mp4"
-                            src="../assets/Mt_Baker.mp4">
-                    </amp-video>
+                <!-- Bron: Coverr Mt. Baker https://coverr.co/ -->
+                <amp-video poster="assets/Mt_Baker.jpg" src="../assets/Mt_Baker.mp4" autoplay loop width="720" height="1280" layout="responsive">
+                    <!-- Define type -->
+                    <source type="video/mp4" src="../assets/Mt_Baker.mp4">
+                </amp-video>
             </amp-story-grid-layer>
             <!-- Add another layer, so the title will be an overlay over the video-->
             <amp-story-grid-layer template="vertical">
-                    <h1 animate-in="fly-in-right"
-                        animate-in-delay="0.5s">
-                        Skiën/ Snowboarden
-                    </h1>
+                <h1 animate-in="fly-in-right" animate-in-delay="0.5s">
+                    Skiën/ Snowboarden
+                </h1>
             </amp-story-grid-layer>
         </amp-story-page>
 
@@ -291,73 +348,50 @@
         <amp-story-page id="page4" auto-advance-after="7s">
             <amp-story-grid-layer template="fill">
                 <!-- Carousel specifies height, width and autoplay. Delay indicates, when the next image is shown -->
-                <amp-carousel width="720" height="1280"
-                    layout="responsive"
-                    type="slides"
-                    autoplay
-                    delay="2500">
-                        <amp-img src="assets/myanmar.jpg"
-                            layout="responsive"
-                            width="720" height="1280">
-                        </amp-img>
-                        <amp-img src="assets/stockholm.jpg"
-                            layout="responsive"
-                            width="720" height="1280">
-                        </amp-img>
-                        <amp-img src="assets/abu-dhabi.jpg"
-                            layout="responsive"
-                            width="720" height="1280">
-                        </amp-img>
+                <amp-carousel width="720" height="1280" layout="responsive" type="slides" autoplay delay="2500">
+                    <amp-img src="assets/myanmar.jpg" layout="responsive" width="720" height="1280">
+                    </amp-img>
+                    <amp-img src="assets/stockholm.jpg" layout="responsive" width="720" height="1280">
+                    </amp-img>
+                    <amp-img src="assets/abu-dhabi.jpg" layout="responsive" width="720" height="1280">
+                    </amp-img>
                 </amp-carousel>
-            </amp-story-grid-layer> 
-            <!-- Add another layer, so it will be an overlay over the images in the carousel -->         
+            </amp-story-grid-layer>
+            <!-- Add another layer, so it will be an overlay over the images in the carousel -->
             <amp-story-grid-layer template="vertical">
-                <h1 animate-in="fly-in-right"
-                    animate-in-delay="0.5s">
+                <h1 animate-in="fly-in-right" animate-in-delay="0.5s">
                     Reizen
                 </h1>
             </amp-story-grid-layer>
         </amp-story-page>
-        
+
         <!-- Show pets vertically -->
         <amp-story-page id="page5" auto-advance-after="15s">
             <amp-story-grid-layer template="thirds">
                 <!-- Wrap image in a div to center content, because margin doesn't work properly in amp-templates -->
                 <div class="wrapper">
-                    <div class="image-ratio"
-                        grid-area="middle-third">
+                    <div class="image-ratio" grid-area="middle-third">
                         <!-- Give amp-img a class to use object-fit and give it a border-radius -->
                         <!-- Setting layout to fill, to fill out .image-ratio. No height of width specification needed -->
-                        <amp-img class="cats"
-                                animate-in="fly-in-right"
-                                animate-in-delay="0.2s"
-                                src="../assets/cat1.jpg"
-                                layout="fill">
+                        <amp-img class="cats" animate-in="fly-in-right" animate-in-delay="0.2s" src="../assets/cat1.jpg" layout="fill">
                         </amp-img>
                     </div>
                 </div>
                 <div class="wrapper">
-                    <div class="image-ratio"
-                        grid-area="middle-third">
+                    <div class="image-ratio" grid-area="middle-third">
                         <!-- Give amp-img a class to use object-fit and give it a border-radius -->
                         <!-- Setting layout to fill, to fill out .image-ratio. No height of width specification needed -->
-                        <amp-img class="cats"
-                                animate-in="fly-in-right"
-                                animate-in-delay="0.2s"
-                                src="../assets/cat2.jpg"
-                                layout="fill">
+                        <amp-img class="cats" animate-in="fly-in-right" animate-in-delay="0.2s" src="../assets/cat2.jpg" layout="fill">
                         </amp-img>
                     </div>
                 </div>
                 <!-- Wrap elements in a div to "text-align: right;" content, because margin doesn't work properly in amp-templates -->
                 <div class="title">
-                    <h1 animate-in="fly-in-right"
-                        animate-in-delay="0.5s">
+                    <h1 animate-in="fly-in-right" animate-in-delay="0.5s">
                         Dit zijn mijn huisdieren
                     </h1>
-                    <p  animate-in="fly-in-right"
-                        animate-in-delay="1.5s">
-                        Mojo en Finn. Fun fact: Mojo (rode kat) is bijna 2 keer zo zwaar als Finn. 
+                    <p animate-in="fly-in-right" animate-in-delay="1.5s">
+                        Mojo en Finn. Fun fact: Mojo (rode kat) is bijna 2 keer zo zwaar als Finn.
                     </p>
                 </div>
             </amp-story-grid-layer>
@@ -366,18 +400,17 @@
         <!-- Link to portfolio -->
         <amp-story-page id="page6" auto-advance-after="10s">
             <amp-story-grid-layer template="vertical">
-                    <h1 animate-in="fly-in-right"
-                        animate-in-delay="0.5s">
-                        Thanks for watching!
-                    </h1>
-            <!-- Give amp-story-grid-layer a class to style elements to the bottom of a page -->
-            <!-- New layer so text will be displayed as an overlay -->
-            <amp-story-grid-layer template="vertical" class="bottom">
-                    <a  href="https://chelseadoeleman.com/">
+                <h1 animate-in="fly-in-right" animate-in-delay="0.5s">
+                    Thanks for watching!
+                </h1>
+                <!-- Give amp-story-grid-layer a class to style elements to the bottom of a page -->
+                <!-- New layer so text will be displayed as an overlay -->
+                <amp-story-grid-layer template="vertical" class="bottom">
+                    <a href="https://chelseadoeleman.com/">
                         Portfolio
                     </a>
-            </amp-story-grid-layer>
-        </amp-story-page> 
+                </amp-story-grid-layer>
+        </amp-story-page>
 
     </amp-story>
 
