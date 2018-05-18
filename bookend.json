@@ -1,0 +1,8 @@
+{
+  "share-providers": {
+    "facebook": true,
+    "email": true,
+    "linkedin": true,
+    "whatsapp": true
+  }
+}
